@@ -15,12 +15,149 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/api/v1/localidades/1",
-							"protocol": "http",
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/autores/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"apisinpaginacion6",
+								"onrender",
+								"com"
 							],
-							"port": "8083",
+							"path": [
+								"api",
+								"v1",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/autores",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 2,\r\n        \"nombre\": \"crusliac\",\r\n        \"apellido\": \"nigga\",\r\n        \"biografia\": \"lalaal\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/autores",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/autores/1",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n        \"id\": 1,\r\n        \"nombre\": \"cruslia\",\r\n        \"apellido\": \"nigga\",\r\n        \"biografia\": \"lalaal\"\r\n    }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/autores/1",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Localidad",
+			"item": [
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/localidades/1",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
 							"path": [
 								"api",
 								"v1",
@@ -35,7 +172,21 @@
 					"name": "Get all",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion1.onrender.com/api/v1/localidades",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
 					},
 					"response": []
 				},
@@ -43,7 +194,30 @@
 					"name": "Create",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 2,\r\n        \"denominacion\": \"MamaLagarto\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/localidades",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
 					},
 					"response": []
 				},
@@ -51,7 +225,22 @@
 					"name": "Delete",
 					"request": {
 						"method": "DELETE",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/localidades/1",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -59,52 +248,31 @@
 					"name": "Update",
 					"request": {
 						"method": "PUT",
-						"header": []
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Localidad",
-			"item": [
-				{
-					"name": "Get one",
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "Get all",
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "Create",
-					"request": {
-						"method": "POST",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "Delete",
-					"request": {
-						"method": "DELETE",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "Update",
-					"request": {
-						"method": "PUT",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 1,\r\n        \"denominacion\": \"sdfsdfsdfs\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/localidades/1",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades",
+								"1"
+							]
+						}
 					},
 					"response": []
 				}
@@ -117,7 +285,22 @@
 					"name": "Get one",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/personas/1",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -125,7 +308,21 @@
 					"name": "Get all",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion1.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
 					},
 					"response": []
 				},
@@ -133,7 +330,21 @@
 					"name": "Create",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
 					},
 					"response": []
 				},
@@ -141,7 +352,22 @@
 					"name": "Delete",
 					"request": {
 						"method": "DELETE",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/personas/1",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -149,7 +375,22 @@
 					"name": "Update",
 					"request": {
 						"method": "PUT",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://apisinpaginacion6.onrender.com/api/v1/personas/1",
+							"protocol": "https",
+							"host": [
+								"apisinpaginacion6",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
 					},
 					"response": []
 				}
